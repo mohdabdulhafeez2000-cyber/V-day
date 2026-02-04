@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmmuDummu ❤️</title>
+    <link rel="stylesheet" href="valent.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="hearts-container"></div>
+
+    <!-- Section 0: Authentication -->
+    <section id="auth-section" class="section active">
+        <div class="container">
+            <div class="auth-content">
+                <h1 class="auth-title">Before We Begin... ❤️</h1>
+                <p class="auth-subtitle">Let me make sure you're the right person</p>
+                
+                <div class="auth-card">
+                    <h2 class="auth-question">Where did you say you live when I asked you for the first time?</h2>
+                    <input type="text" id="auth-input" class="auth-input" placeholder="Type your answer here...">
+                    <button id="auth-submit" class="auth-submit-btn">Submit</button>
+                    <div class="auth-feedback" id="auth-feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Welcome Note -->
+    <section id="welcome-section" class="section">
+        <div class="container">
+            <div class="welcome-content">
+                <h1 class="welcome-title">My Cutuuu Ammu,</h1>
+                <div class="welcome-message">
+                    <p>Every moment with you feels like a beautiful dream I never want to wake up from. You've filled my days with laughter, my heart with warmth, and my life with meaning.</p>
+                    <p>I've made this little quiz for you to answer. Make sure you answer all of them correctly, or you'll hear it from me! 😏</p>
+                    <p>Are you ready?</p>
+                </div>
+                <button id="start-quiz-btn" class="start-quiz-btn">Let's Begin ❤️</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Quiz -->
+    <section id="quiz-section" class="section">
+        <div class="container">
+            <div class="quiz-header">
+                <h1 class="main-title">A Little Quiz for You ❤️</h1>
+                <p class="subtitle">Answer these questions to unlock something special...</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p class="question-counter"><span id="current-question">1</span> / 5</p>
+            </div>
+
+            <div class="quiz-content">
+                <!-- Question 1 -->
+                <div class="question-card active" data-question="1" data-answer="">
+                    <h2 class="question-text">Question will appear here</h2>
+                    <div class="options">
+                        <button class="option-btn" data-option="a">Option A</button>
+                        <button class="option-btn" data-option="b">Option B</button>
+                        <button class="option-btn" data-option="c">Option C</button>
+                        <button class="option-btn" data-option="d">Option D</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-card" data-question="2" data-answer="">
+                    <h2 class="question-text">Question will appear here</h2>
+                    <div class="options">
+                        <button class="option-btn" data-option="a">Option A</button>
+                        <button class="option-btn" data-option="b">Option B</button>
+                        <button class="option-btn" data-option="c">Option C</button>
+                        <button class="option-btn" data-option="d">Option D</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-card" data-question="3" data-answer="">
+                    <h2 class="question-text">Question will appear here</h2>
+                    <div class="options">
+                        <button class="option-btn" data-option="a">Option A</button>
+                        <button class="option-btn" data-option="b">Option B</button>
+                        <button class="option-btn" data-option="c">Option C</button>
+                        <button class="option-btn" data-option="d">Option D</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <!-- Question 4 (Photo question) -->
+                <div class="question-card photo-question" data-question="4" data-answer="">
+                    <div class="photo-container">
+                        <img src="" alt="Question photo" id="photo-4">
+                    </div>
+                    <h2 class="question-text">Question will appear here</h2>
+                    <div class="options">
+                        <button class="option-btn" data-option="a">Option A</button>
+                        <button class="option-btn" data-option="b">Option B</button>
+                        <button class="option-btn" data-option="c">Option C</button>
+                        <button class="option-btn" data-option="d">Option D</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <!-- Question 5 (Photo question) -->
+                <div class="question-card photo-question" data-question="5" data-answer="">
+                    <div class="photo-container">
+                        <img src="" alt="Question photo" id="photo-5">
+                    </div>
+                    <h2 class="question-text">Question will appear here</h2>
+                    <div class="options">
+                        <button class="option-btn" data-option="a">Option A</button>
+                        <button class="option-btn" data-option="b">Option B</button>
+                        <button class="option-btn" data-option="c">Option C</button>
+                        <button class="option-btn" data-option="d">Option D</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Proposal -->
+    <section id="proposal-section" class="section">
+        <div class="container">
+            <div class="proposal-content">
+                <h1 class="proposal-title">Aamena Jafar,<br>Will you be my Valentine?</h1>
+                
+                <div class="proposal-buttons">
+                    <button id="yes-btn" class="proposal-btn yes-btn">
+                        <span>YES</span>
+                        <span class="hearts">❤️</span>
+                    </button>
+                    <button id="no-btn" class="proposal-btn no-btn">
+                        <span id="no-text">NO</span>
+                    </button>
+                </div>
+
+                <div class="quote">
+                    <p>"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."</p>
+                    <span class="quote-author">— Maya Angelou</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Success -->
+    <section id="success-section" class="section">
+        <div class="container">
+            <div class="success-content">
+                <h1 class="success-title">I knew you'd say YES, Meri Jaan ❤️</h1>
+                <div class="success-photo">
+                    <img src="" alt="Our special moment" id="success-photo">
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="celebration-text">
+                    <p>I love you, Ammu. Always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="valent.js"></script>
+</body>
+</html>
