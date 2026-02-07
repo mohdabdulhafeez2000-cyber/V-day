@@ -43,7 +43,7 @@ const questions = [
 ];
 
 // Success photo URL - REPLACE THIS WITH YOUR ACTUAL PHOTO
-const successPhotoUrl = "https://via.placeholder.com/600x500?text=Replace+with+your+success+photo";
+const successPhotoUrl = "photo3.jpeg";
 
 // Initialize
 let currentQuestion = 0;
@@ -411,4 +411,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Proposal buttons
     document.getElementById('no-btn').addEventListener('click', handleNoButton);
     document.getElementById('yes-btn').addEventListener('click', handleYesButton);
+
 });
